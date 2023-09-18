@@ -36,4 +36,23 @@ Content-Type: application/json
 
 }
 
+### Update excisting Content with invalid id
+PUT http://localhost:8080/api/content/99
+Content-Type: application/json
 
+{
+"id": 1,
+"title": "MY FIRST POST!!!",
+"desc": "MY FIRST POST!!!",
+"status": "IDEA",
+"contentType": "ARTICLE",
+"dateCreated": "2023-09-18T11:32:28.7134106",
+"dateUpdated": "2023-09-18T11:32:28.7134106",
+"url": "http://localhost:8080/my-first-blog-post"
+
+}
+
+
+### delete by if id
+DELETE http://localhost:8080/api/content/2
+Content-Type: application/json
